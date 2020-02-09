@@ -1,0 +1,10 @@
+<h1>This is the index</h1>
+<%= link_to("Create new garment?", "/garments/new") %>
+<% @garments.each do |gar| %>
+    <div><%= link_to(gar.prenda, "/garments/#{gar.id}") %></div>
+<% end %>
+    
+    
+<%# this comments a line or block in html.erb
+but it doesn't work very well with actual code
+%>

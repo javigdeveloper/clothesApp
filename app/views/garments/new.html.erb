@@ -1,0 +1,13 @@
+<%= form_for @garment do |f| %>
+  <div>New Garment:</div>
+  Garment: <%= f.text_field :prenda %>
+  Price: <%= f.text_field :precio %>
+  Pic: <%= f.file_field :pic %>
+  <%= f.submit %>
+<% end %>
+
+<% 
+#standard form in getting started with
+#rails/ 5 getting up and running/the first
+#form
+%>

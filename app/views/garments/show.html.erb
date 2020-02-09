@@ -1,0 +1,10 @@
+<h2><%= @garment.prenda %></h2>
+<h3><%= @garment.precio %></h3>
+<% if @garment.pic.attached? %>
+    <%= image_tag @garment.pic, class: "garment_pic dress", height: 800 %>
+<% end %>
+
+<%= link_to "edit", "/garments/#{@garment.id}/edit" %>
+<%= link_to "home", "/garments" %>
+<%= button_to "Delete", @garment, method: :delete, data: { confirm: "Are you sure?" } %>
+
